@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Title</title>
+    <meta charset="utf-8">
+    <style>
+      * {margin:0; box-sizing:border-box;}
+      ul, ol, li {list-style:none; margin:0; padding:0;}
+a {text-decoration:none;}
+      /*header*/
+      header {width:1903px; height:238px; margin:0 auto;}
+
+
+      /*1줄*/
+      #main1 {width:1903px; height:42px; margin:0 auto; background-color:rgb(255, 187, 0); text-align:center;}
+      #main1 > .m1 {font-size:19px; font-weight:bold; line-height:42px; color:#000; letter-spacing:-2px;}
+      #main1 > .m2 {font-size:19px; font-weight:bold; color:red; line-height:42px; letter-spacing:-2px;} 
+
+      /*2줄*/
+      #main2 {width:1903px; height:35px; margin:0px auto; background-color:#e7e7e7;}
+      #main2 > #main3 {width:800px; height:30px; margin:5px 0 0 403px; float:left;}
+      #main2 > #main3 > .shin {font-size:11.5px; color:#a1a1a1; line-height:25px; margin:0 25px 0 0px;}
+      #main2 > #main3 > .one {font-size:11.5px; color:#a1a1a1; line-height:25px; margin:0 0 30px 0px;}
+      #main2 > #main3 > .shop {font-size:11.5px; color:#000; line-height:25px; margin:0 0 0 25px;}
+      #main2 > #login {width:295px; height:30px; margin:10px 350px 0 0px; float:right;}
+      #main2 > #login > ul {font-size:10px; color:#666; font-weight:bold;}
+      #main2 > #login > ul > li {float:left; margin:0 5px; color:#666;}
+      /*3줄*/
+      .logo1 {width:120px; height:26px; margin:42px 0 0 415px; float:left;}
+      .logo1 > img {width:120px; height:26px;}
+      .logo2 {width:70px; height:67px; float:left; margin:23px 0 0 382px;} 
+      .logo2 > img {width:70px; height:67px;}
+      .icon1 {width:28px; height:28px; float:right; margin:45px -215px 0 0px;}
+      .icon1 > img {width:28px; height:28px;}
+      .icon2 {width:28px; height:28px; float:right; margin:45px -250px 0 0px;}
+      .icon2 > img {width:28px; height:28px;}
+      .search-box {width:240px; height:36px; border:1px solid #e7e7e7; float:right; margin:38px -150px 0 0px;}
+      .search-txt {border:none; outline:none; float:left; color:#000; font-size:13px; line-height:30px; width:150px; height:28px; margin:5px 0 0 10px;}
+      .search-btn {width:20px; height:20px; float:right; margin:7px 10px 0 30px; background-color:pink;} 
+      .search-btn > .ques {width:20px; height:20px; float:left;}
+
+
+
+      /*4줄*/
+      nav {border:1px solid #e7e7e7; width:1903px; height:53px; margin:0 auto; float:left; margin:18px 0 0 0px;}
+      nav > ul {float:left; margin:0 0 0 575px;}
+      nav > ul > li {float:left; margin:15.5px 23px; color:#000; font-weight:bold; font-size:16px; letter-spacing:-1px;}
+
+
+
+      /*5줄*/
+      #slider {width:1903px; height:400px; margin:0 auto;}
+      #slider > img {width:100%; height:100%;}
+      
+      
+      /*6줄*/
+      #iconbanner {width:1300px; height:150px; margin:0 auto;}
+      #iconbanner > .iconbox {width:100px; height:100px; float:left; background-color:white; margin:20px 0 0 45px;}
+      #iconbanner > .iconbox > img {width:100px; height:100px; float:left;}
+      #iconbanner > .iconbox > p {font-size:12px; text-align:center;}
+
+
+      /*section*/
+      section {width:1300px; height:2000px; margin:0 auto;}
+      /*첫구매*/
+      #product1 {width:1300px; height:450px; float:left; margin:0 auto;}
+      #product1 > .first {width:1300px; height:50px; float:left; margin:50px 10px 0 5px;}
+      #product1 > .first > .name1 {float:left; font-size:19px; font-weight:bold; line-height:40px; margin:5px 10px 0 5px;}
+      #product1 > .first > .name2 {float:left; font-size:15px; line-height:40px;  margin:10px 0 20px 0px;}
+      #product1 > .box {width:250px; height:300px; float:left; margin:10px 20px 0 30px;}
+      #product1 > .box > img {width:250px; height:250px; float:left; margin:0px 20px 20px 0px;}
+      #product1 > .box > h4 {font-size:14px; font-weight:bold; margin:10px 10px 0 0px;}
+      #product1 > .box > .perc {font-size:13px; color:red;margin:30px 10px 0 0px;}
+      #product1 > .box > .won {font-size:13px; margin:30px 0 0 0px;}
+      #product1 > .box > .sale {font-size:13px; margin:30px 0 0 20px;}
+
+      /*런칭특가*/
+      #product2 {width:1300px; height:400px; float:left; margin:130px 0 20px 0px;}
+      #product2 > .first2 {width:1300px; height:50px; float:left;}
+      #product2 > .first2 > .name3 {float:left; font-size:19px; font-weight:bold; line-height:40px; margin:5px 10px 0 5px;}
+      #product2 > .first2 > .name4 {float:left; font-size:15px; line-height:40px;  margin:10px 0 20px 0px;}
+      #product2 > .box2 {width:550px; height:340px; float:left; margin:10px 20px 0 30px;}
+      #product2 > .box2 > img {width:550px; height:350px; margin:0px 20px 0 0px;}
+      #product2 > .box2 > h4 {font-size:14px; font-weight:bold; margin:20px 10px 0 0px;}
+      #product2 > .box2 > .perc2 {font-size:13px; color:red; margin:30px 10px 0 0px;}
+      #product2 > .box2 > .won2 {font-size:13px; margin:30px 0 0 0px;}
+      #product2 > .box2 > .sale2 {font-size:13px; margin:30px 0 0 20px;}
+
+
+
+
+
+      footer {width:1300px; height:400px; margin:0 auto; background-color:green;}
+      #nav2 {border:1px solid #e7e7e7; width:1300px; height:55px; margin:0 auto; float:left; margin:0 0 0 0px;}
+      #nav2 > ul {float:left; margin:0 0 0 30px;}
+      #nav2 > ul > li {float:left; margin:15.5px 23px; color:#000; font-weight:bold; font-size:16px; letter-spacing:-1px;}
+
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+
+
+
+      <div id="main1">
+        <span class="m1">~77% SALE 그랜드 홀리데이</span>
+        <span class="m2">9,900원 릴레이&할인쿠폰
+        </span>
+      </div>
+
+      <div id="main2">
+        <span id="main3">
+          <span class="shin">다이어트신</span>
+          <span class="one">|</span>
+          <span class="shop"><strong>다신샵</strong></span>
+        </span>
+        <span id="login">
+          <ul>
+            <li>로그인</li>
+            <li>|</li>
+            <li>회원가입</li>
+            <li>|</li>
+            <li>비회원주문조회</li>
+            <li>|</li>
+            <li>즐겨찾기</li>
+          </ul>
+        </span>
+      </div>
+
+
+
+
+      <span class="logo1">
+        <img src="https://dshop.dietshin.com/img/main/ico_hangul_logo.png?20200401" alt="한글 로고">
+      </span>
+      <span class="logo2">
+        <img src="https://dshop.dietshin.com/img/main/ico_logo.png" alt="로고">
+      </span>
+
+      <span class="icon1"><img src="https://dshop.dietshin.com/img/main/ico_my.png" alt="사람 이모티콘"></span>
+      <span class="icon2"><img src="https://dshop.dietshin.com/img/main/ico_cart.png" alt="장바구니 이모티콘"></span>
+
+      <form class="search-box" action="" method="get">
+        <input class="search-txt" type="text" name="search" placeholder="상품 검색해보세요.">
+        <span class="search-btn">
+          <input type="image" class="ques" src="https://dshop.dietshin.com/img/btn/btn_sch.gif" alt="검색" style="outline:none" onclick="checkSearch1();"/>
+        </span>
+      </form>
+
+
+
+      <nav>
+
+        <ul>
+          <li>그랜드 홀리데이</li>
+          <li>BEST</li>
+          <li>SALE</li>
+          <li>NEW</li>
+          <li>식단프로그램</li>
+          <li>다이어트챌린지</li>
+          <li>무료배송</li>
+          <li>이벤트&쿠폰</li>
+        </ul>
+
+      </nav>
+
+
+
+    </header>
+
+
+    <div id="slider">
+
+
+      <img src="https://data.0app0.com/diet/banner/5837_1735920965.jpg" alt="메인 배너">
+
+    </div>
+
+    <div id="iconbanner">
+      <div class="iconbox">
+        <img src="img/img1.png" alt="아이콘1"><p>그랜드홀리데이</p></div>
+      <div class="iconbox">
+        <img src="img/img2.png" alt=""><p>대용량특가</p></div>
+      <div class="iconbox">
+        <img src="img/img3.png" alt=""><p>골라담기</p></div>
+      <div class="iconbox">
+        <img src="img/img4.png" alt=""><p>단백질식단</p></div>
+      <div class="iconbox">
+        <img src="img/img5.png" alt=""><p>저당식단</p></div>
+      <div class="iconbox">
+        <img src="img/img6.png" alt=""><p>탄수화물관리</p></div>
+      <div class="iconbox">
+        <img src="img/img7.png" alt=""><p>밀가루대체</p></div>
+      <div class="iconbox">
+        <img src="img/img8.png" alt=""><p>식단필수템</p><div>
+        </div>
+
+
+      </div>
+
+
+      <section>
+        <!--1단-->
+        <div id=product1>
+          <div class="first">
+            <span class="name1">첫구매 인기상품 990원!</span>
+            <span class="name2">가입 후 단 7일! 신규 회원님께만 드리는 특별 혜택</span>
+          </div>
+
+
+          <div class="box">
+            <img src="https://data.0app0.com/diet/shop/goods/20240308/w_20240308162811_7866561061.jpg" alt="마녀스프">
+            <h4>[첫구매] 오늘은 마녀스프 2팩</h4>
+            <span class="perc">90%</span>
+            <span class="won">990원</span>
+            <span class="sale">10,000원</span>
+          </div>
+          <div class="box">
+            <img src="https://data.0app0.com/diet/shop/goods/20230323/w_20230323172834_9025770151.jpg" alt="마녀스프">
+            <h4>[첫구매] 닭신 소스 닭가슴살 스테이크 3팩</h4>
+            <span class="perc">89%</span>
+            <span class="won">990원</span>
+            <span class="sale">9,000원</span>
+          </div>
+          <div class="box">
+            <img src="https://data.0app0.com/diet/shop/goods/20240702/w_20240702171626_7619836065.jpg" alt="마녀스프">
+            <h4>[첫구매] 성수동905 치킨 2팩</h4>
+            <span class="perc">89%</span>
+            <span class="won">990원</span>
+            <span class="sale">9,000원</span>
+          </div>
+          <div class="box">
+            <img src="https://data.0app0.com/diet/shop/goods/20220103/w_20220103131259_6441113540.jpg" alt="마녀스프">
+            <h4>[첫구매] 성수동905 순살족발</h4>
+            <span class="perc">86%</span>
+            <span class="won">990원</span>
+            <span class="sale">7,000원</span>
+          </div>
+
+          <!--2단-->
+          <div id=product2>
+            <div class="first2">
+              <span class="name3">지금만 이 가격! 런칭특가</span>
+
+            </div>
+
+
+            <div class="box2">
+              <img src="https://data.0app0.com/diet/shop/week_hotdeal/20250107/w_20250107164722_3648908520.jpg" alt="마녀스프">
+              <h4>[팩당 990원~] 착한 탄수화물! 현미 주먹밥 홀리데이 특가</h4>
+              <span class="perc2">45%</span>
+              <span class="won2">9,900원</span>
+              <span class="sale2">18,000원</span>
+              <br><br>
+              <hr>
+            </div>
+            <div class="box2">
+              <img src="https://data.0app0.com/diet/shop/week_hotdeal/20250107/w_20250107170649_5696900763.jpg" alt="마녀스프">
+              <h4>[무료배송&추가 할인쿠폰] 닭가슴살 베스트 세트 최대할인</h4>
+              <span class="perc2">51%</span>
+              <span class="won2">33,900원</span>
+              <span class="sale2">69,000원</span>
+              <br><br>
+              <hr>
+            </div>
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <footer>
+        <div id="nav2">
+          <ul>
+            <li>개인정보처리방침</li>
+            <li>|</li>
+            <li>제휴º입점 문의</li>
+            <li>|</li>
+            <li>이용약관</li>
+            <li>|</li>
+            <li>자주하는 질문</li>
+          </ul>
+        </div>
+      </footer>
+
+      </body>
+    </html>
+
+
