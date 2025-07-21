@@ -1,5 +1,7 @@
 # 다신샵(Dasinshop) 클론 웹페이지
 
+<img width="1920" height="920" alt="image" src="https://github.com/user-attachments/assets/dcf61408-0903-410a-91ff-90c5ebed13e7" />
+
 이 프로젝트는 **다이어트 식품 전문 쇼핑몰 ‘다신샵’**의 홈페이지를 참고하여 제작한 클론 웹페이지입니다.  
 HTML과 CSS를 활용해 정적인 레이아웃과 웹 퍼블리싱 기초를 연습하기 위해 구현되었습니다.
 
